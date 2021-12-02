@@ -9,3 +9,5 @@ i went to shower and thought of this idea
 > coming soon lol i am busy
 
 written in javascript because everyone loves javascript and so do i 
+
+!! there is no mcmod.info so master7720 aka PreparedSystem_32 cannot make prs haha !!
