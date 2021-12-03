@@ -1,0 +1,27 @@
+{
+  "name": "remote-hacked-client",
+  "version": "1.0.0",
+  "description": "a bot with a client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cart69420/remote-hacked-client.git"
+  },
+  "author": "cart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cart69420/remote-hacked-client/issues"
+  },
+  "homepage": "https://github.com/cart69420/remote-hacked-client#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "minecraft-data": "^2.96.0",
+    "mineflayer": "^3.11.2"
+  }
+}
