@@ -11,7 +11,7 @@ module.exports = () => {
         version: process.env.VERSION ? process.env.VERSION : false,
     });
 
-    if(!process.eventInit) {
+    if(!bot.eventInit) {
         require('../events/Event')(bot);
     }
     return bot

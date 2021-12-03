@@ -10,5 +10,5 @@ module.exports = (bot) => {
             bot.on(event.name, (...args) => event.execute(...args, bot));
         }
     }
-    process.eventInit = true;
+    bot.eventInit = true;
 }
