@@ -1,6 +1,6 @@
-import NumSetting from "../Settings/NumSetting";
-import ModeSetting from "../Settings/ModeSetting";
-import ColorSetting from "../Settings/ColorSetting";
+const NumSetting = require("../Settings/NumSetting");
+const ModeSetting = require("../Settings/ModeSetting");
+const ColorSetting = require("../Settings/ColorSetting");
 
 const settings = {
     delay: new NumSetting("Delay", "the delay", 0, 0, 100),
@@ -8,7 +8,7 @@ const settings = {
     color: new ColorSetting("Color", "the color", [255, 255, 255, 0]),
 }
 
-exports.info = {
+exports = {
     name: "AutoCrystal",
     description: "make funny boom boom explosion sound",
     settings: settings
