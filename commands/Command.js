@@ -10,6 +10,4 @@ module.exports = (bot) => {
             console.log(err)
         }
     }
-    
-    bot.commandInit = true
 }

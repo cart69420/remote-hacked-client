@@ -2,7 +2,7 @@ module.exports = {
     name: 'ping',
     aliases: ['pong'],
     description: 'Pong!',
-    execute(bot, username, args) {
+    execute(bot, args, username) {
         bot.whisper(username, bot.players[bot.username].ping + "ms");
     }
 }

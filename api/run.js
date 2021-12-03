@@ -12,10 +12,13 @@ module.exports = () => {
     });
 
     bot.modules = new Map();
+    bot.activeModules = new Map();
     bot.commands = new Map();
-    bot.prefix = process.env.PREFIX ? process.env.PREFIX : 'c.';
-    if(!bot.eventInit) require('../events/Event')(bot);
-    if(!bot.commandInit) require('../commands/Command')(bot);
     
+    bot.prefix = process.env.PREFIX ? process.env.PREFIX : 'c.';
+    require('../events/Event')(bot);
+    require('../commands/Command')(bot);
+    require('../modules/registerModule')(bot);
+
     return bot
 }

@@ -14,5 +14,4 @@ module.exports = (bot) => {
             console.log(err)
         }
     }
-    bot.eventInit = true;
 }

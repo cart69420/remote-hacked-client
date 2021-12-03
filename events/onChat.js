@@ -14,7 +14,7 @@ module.exports = {
         if(!commands) return;
 
         try {
-            commands.execute(bot, username, args, message)
+            commands.execute(bot, args, username, message)
         } catch (error) {
             console.error(error)
         }
