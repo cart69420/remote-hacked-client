@@ -6,7 +6,7 @@ no this is not a forge mod, but it summons a bot with a client integrated to it 
 i went to shower and thought of this idea 
 
 ## features
-> coming soon lol i am busy
+> modules and stuffs coming very soon
 
 written in javascript because everyone loves javascript and so do i 
 

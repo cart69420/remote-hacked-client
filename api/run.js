@@ -11,8 +11,11 @@ module.exports = () => {
         version: process.env.VERSION ? process.env.VERSION : false,
     });
 
-    if(!bot.eventInit) {
-        require('../events/Event')(bot);
-    }
+    bot.modules = new Map();
+    bot.commands = new Map();
+    bot.prefix = process.env.PREFIX ? process.env.PREFIX : 'c.';
+    if(!bot.eventInit) require('../events/Event')(bot);
+    if(!bot.commandInit) require('../commands/Command')(bot);
+    
     return bot
 }
