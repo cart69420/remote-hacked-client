@@ -1,10 +1,14 @@
 class StringSetting {
-    constructor(name, description, defaultString, minLength, maxLength) {
+    constructor(name, description, string, minLength, maxLength) {
         this.name = name;
         this.description = description;
-        this.defaultString = defaultString;
+        this.string = string;
         this.minLength = minLength;
         this.maxLength = maxLength;
+    }
+
+    getString() {
+        return this.string;
     }
 }
 

@@ -1,1 +1,2 @@
-require("./api/run")();
+const bot = require("./api/run")();
+module.exports = bot;

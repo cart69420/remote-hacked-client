@@ -6,6 +6,16 @@ class NumSetting {
         this.minValue = minValue;
         this.maxValue = maxValue;
     }
+
+    getValue(float=false) {
+        return float==true ? parseFloat(this.value) : parseInt(this.value);
+    }
+    getMinVale(float=false) {
+        return float==true ? parseFloat(this.minValue) : parseInt(this.minValue);
+    }
+    getMaxValue(float=false) {
+        return float==true ? parseFloat(this.maxValue) : parseInt(this.maxValue);
+    }
 }
 
 module.exports = NumSetting;

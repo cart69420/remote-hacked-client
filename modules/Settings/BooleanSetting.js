@@ -1,9 +1,12 @@
 class BooleanSetting {
-    constructor(name, description, defaultBool) {
+    constructor(name, description, boolValue) {
         this.name = name;
         this.description = description;
-        this.Bool = defaultBool;
-        this.otherBool = !defaultBool;
+        this.boolValue = boolValue;
+    }
+
+    getBoolValue() {
+        return this.boolValue;
     }
 }
 

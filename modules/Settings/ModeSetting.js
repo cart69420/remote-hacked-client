@@ -1,9 +1,16 @@
 class ModeSetting {
-    constructor(name, description, defaultMode, modes) {
+    constructor(name, description, mode, arrModes) {
         this.name = name;
         this.description = description;
-        this.defaultMode = defaultMode;
-        this.modes = modes;
+        this.mode = mode;
+        this.modes = arrModes;
+    }
+
+    getMode() {
+        return this.mode;
+    }
+    getModes() {
+        return this.modes;
     }
 }
 

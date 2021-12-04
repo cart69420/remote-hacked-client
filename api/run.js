@@ -16,9 +16,7 @@ module.exports = () => {
     bot.commands = new Map();
     
     bot.prefix = process.env.PREFIX ? process.env.PREFIX : 'c.';
-    require('../events/Event')(bot);
-    require('../commands/Command')(bot);
-    require('../modules/registerModule')(bot);
-
+    //require('../events/Event')(bot);
+    //require('../commands/Command')(bot);
     return bot
 }
